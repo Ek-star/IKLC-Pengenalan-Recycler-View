@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // fungsi yang dipanggil pada saat penciptaan aktivitas untuk menginisialisasi data dan RecyclerView.
         init()
 
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycler_view)
 
         var data = ArrayList<SocialMedia>()
-        data.add(SocialMedia(R.drawable.instagram , "Facebook" , "Facebook Icon"))
+        data.add(SocialMedia(R.drawable.instagram , "Instagram" , "Instagram Icon"))
         data.add(SocialMedia(R.drawable.twitter , "X" , "X Icon"))
         data.add(SocialMedia(R.drawable.whatsapp, "Whatsapp" , "Whatsapp Icon"))
         data.add(SocialMedia(R.drawable.youtube , "Youtube" , "Youtube Icon"))

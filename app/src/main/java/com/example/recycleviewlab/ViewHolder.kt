@@ -25,3 +25,7 @@ class ViewHolder(inflater: LayoutInflater, parent: ViewGroup):
             txtSubTitle?.text = data.txtSubTitle
         }
 }
+
+// ViewHolder adalah kelas yang digunakan untuk menyimpan referensi ke elemen-elemen tampilan di dalam setiap item RecyclerView.
+// init block adalah bagian dari kelas yang dijalankan saat instance ViewHolder dibuat.
+// bind adalah fungsi untuk mengisi tampilan ViewHolder dengan data dari objek SocialMedia.
